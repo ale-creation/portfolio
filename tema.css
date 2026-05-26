@@ -1,0 +1,70 @@
+/* Posição do botão de tema */
+#botao-tema {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #f7f7f7;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 20px;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* --- AS CORES DO MODO CLARO (INVERTIDO) --- */
+/* Quando o body tiver a classe 'modo-claro', o site clareia */
+body.modo-claro {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+body.modo-claro .projeto-container {
+    background-color: #ffffff;
+    border-color: #333;
+    box-shadow: 5px 5px 0px #333;
+}
+
+body.modo-claro a {
+    color: #0066cc; /* Link azul padrão para o modo claro */
+}
+
+body.modo-claro #botao-tema {
+    background-color: #333;
+    color: white;
+}
+
+.dissertacao-sistema {
+    max-width: 500px;
+    margin: 20px auto;
+    font-size: 0.95rem;
+    border-left: 3px solid #ffeb3b;
+    padding-left: 15px;
+
+    text-align: justify;
+
+    /* Coloca hifen automaticamente se a palavra for grande */
+    hyphens: auto;
+    -webkit-hyphens: auto; /* Para iPhone e Safari */
+}
+
+/* =======================================================================================================
+RESPONSIVIDADE (Para celulares e telas pequenas)
+========================================================================================================== */
+
+@media (max-width: 600px) {
+    #botao-tema {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 20px auto;
+        display: block;
+        width: fit-content;
+    }
+        
+        h1 {
+            font-size: 1.8rem !important;
+            margin-top: 10px;
+        }
+}

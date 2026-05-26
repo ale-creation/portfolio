@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Ecossistema</title>
+    
+    <link rel="stylesheet" href="../tema.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Botão do modo noturno -->
+    <button id="botao-tema">☀️ Modo Claro</button>
+
+    <header>
+        <a href="../index.html" class="botao-voltar">⬅ Voltar para o Portfólio</a>
+        <h1>Simulador de Ecossistema Simples</h1>
+        <p class="dissertacao-sistema">Um princípio de crescimento é percebido quando a mata vai sendo distruibuida. Clique no terreno para plantar e veja a mata crescer!</p><br>
+        <p></p>
+    </header>
+
+    <main>
+        <div class="controles">
+            <button id="btn-plantar">🌱 Plantar (População: <span id="contador">0</span>)</button>
+            <button id="btn-limpar">🧹 Resetar</button>
+        </div>
+
+        <div id="terreno"></div>
+        
+        <p id="mensagem-sistema">O terreno está vazio. Comece a plantar!</p>
+        <p class="dissertacao-sistema">As plantas competem por espaço quando nascem no mesmo lugar e acabam morrendo.</p>
+    </main>
+
+    <script src="../tema.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
